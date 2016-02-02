@@ -31,6 +31,7 @@ return array(
     */
     
     'paths' => array(
+        public_path('resized'),
         public_path('prods'),
         public_path('tmp'),
         public_path('uploads'),
@@ -55,6 +56,8 @@ return array(
    
     'templates' => array(
         'card' => 'App\Filters\cardFilter',
+        'header' => 'App\Filters\headerFilter',
+        'boximg' => 'App\Filters\boximgFilter',
         'banner' => 'App\Filters\bannerFilter',
         'frontpagebanner' => 'App\Filters\frontpagebannerFilter',
         'productbg' => 'App\Filters\productbgFilter',

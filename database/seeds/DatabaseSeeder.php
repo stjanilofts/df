@@ -64,301 +64,6 @@ class DatabaseSeeder extends Seeder
 
 
 
-        $vorur = [
-            [
-                'category_id' => 0,
-                'title' => 'Ávaxtasýrupúðar',
-                'content' => '<p>Púðarnir frá Crystal Peel eru ríkir af C vítamíni og öðrum andoxunarefnum ásamt ávaxtasýrum.</p>
-<p>Inniheldur R-arbutin og hyauluronic acid.</p>
-<p>Endurnýja húðina, ver gegn sindurefnum , gefa húðinni ljóma, stinna og slétta og auka frumuendurnýjun.</p>
-<p>Frábært að nota með húðslípikreminu dagana sem þú notar það ekki.</p>',
-                'images' => [
-                    [
-                        'name' => 'fruit-extract-pads-500x5001.png',
-                        'title' => 'Ávaxtasýrupúðar',
-                    ],
-                ],
-                'status' => 1,
-                'options' => []
-            ],
-            [
-                'category_id' => 0,
-                'title' => 'Ferðasett skrúbb og sápa',
-                'content' => '
-<h3>Húðslípikrem</h3>
-<p>Auðveld og fljót leið til að</p>
-<ul>
-<li>Jafna húðlit og vinna á litamismun</li>
-<li>Stinnir og þéttir húð</li>
-<li>Eykur Collagen framleiðslu</li>
-<li>Minnkar fínar línur og hrukkur</li>
-<li>Verndar húðina og kemur í veg fyrir ótímabæra öldrun</li>
-<li>Minnkar svitaholur og dregur saman húðina</li></ul>
-
-<p>Gerir allar aðrar vörur sem þú notar eftirá virkari.</p>
-
-<h3>Húðslípisápa fyrir líkamann</h3>
-<ul>
-<li>Örvar og endurnýjar</li>
-<li>Tekur í burtu daufa,þurra húð og gerir hana mýkri og unglegri.</li>
-<li>Kemur í veg fyrir inngróin hár og vinnur á cellolite/appelsínuhúð.</li>
-<li>Hjálpar til við t.d þurra olnboga og excem</li>
-<li>Hjálpar til að jafna húðina</li>
-<li>Náttúruleg vegetable soap base with olive oil, shea butter, and aloe gel</li>
-</ul>',
-                'images' => [
-                    [
-                        'name' => 'body-bar-travel1.png',
-                        'title' => 'Ferðasett skrúbb og sápa',
-                    ],
-                    [
-                        'name' => 'small-travel-tube.png',
-                        'title' => 'Ferðasett skrúbb og sápa',
-                    ],
-                ],
-                'status' => 1,
-                'options' => []
-            ],
-            [
-                'category_id' => 0,
-                'title' => 'Gjafasett Dömu',
-                'content' => '
-<h3>Húðslípikrem</h3>
-<p>Auðveld og fljót leið til að</p>
-<ul>
-<li>Jafna húðlit og vinna á litamismun</li>
-<li>Stinnir og þéttir húð</li>
-<li>Eykur Collagen framleiðslu</li>
-<li>Minnkar fínar línur og hrukkur</li>
-<li>Verndar húðina og kemur í veg fyrir ótímabæra öldrun</li>
-<li>Minnkar svitaholur og dregur saman húðina</li></ul>
-
-<p>Gerir allar aðrar vörur sem þú notar eftirá virkari.</p>
-
-<h3>Húðslípisápa fyrir líkamann</h3>
-<ul>
-<li>Örvar og endurnýjar</li>
-<li>Tekur í burtu daufa,þurra húð og gerir hana mýkri og unglegri.</li>
-<li>Kemur í veg fyrir inngróin hár og vinnur á cellolite/appelsínuhúð.</li>
-<li>Hjálpar til við t.d þurra olnboga og excem</li>
-<li>Hjálpar til að jafna húðina</li>
-<li>Náttúruleg vegetable soap base with olive oil, shea butter, and aloe gel</li>
-</ul>',
-                'images' => [
-                    [
-                        'name' => 'womens-gift-set.png',
-                        'title' => 'Gjafasett Dömu',
-                    ],
-                ],
-                'status' => 1,
-                'options' => []
-            ],
-            [
-                'category_id' => 0,
-                'title' => 'Gjafasett Herra',
-                'content' => '
-<h3>Crystal Peel húðslípikrem fyrir herra</h3>
-<p><strong>Pre-shave formúla fyrir herra.</strong></p>
-
-<ul>
-<li>Virkar sem hreinsir og skrúbb fyrir herrana</li>
-<li>Hefur sannað sig í að vinna gegn rakbólum og inngrónum hárum.</li>
-<li>Með þessari virku vöru verður raksturinn sem aldrei fyrr</li>
-<li>Bætir áferð húðarinnar og gefur hreinleika</li>
-<li>Sjáanlegur árangur með fyrstu notkun</li>
-</ul>
-
-<p>Þessi virka húðmeðferð er engri lík og áferð húðarinnar verður dásamleg. Mælum með góðu rakakremi eftir meðferðina með ríkum sólarvarnarstuðul þar sem er verið að vinna mikið á yfirborði húðarinnar.</p>
-
-<h3>Crystal Peel Microdermobration soap</h3>
-<p><strong>Microdermabrasion exfoliating soap for the body.</strong></p>
-
-<ul>
-<li>Örvar og endurnýjar</li>
-<li>Tekur í burtu daufa,þurra húð og gefur mýkri og unglegri húð.</li>
-<li>Kemur í veg fyrir inngróin hár og vinnur á cellolite/appelsínuhúð.</li>
-<li>Hjálpar til við t.d þurra olnboga og excem</li>
-<li>Hjálpar til að jafna húðina</li>
-<li>Náttúruleg vegetable soap base with olive oil, shea butter, and aloe gel</li>
-<li>Virk innihaldsefni : magnesium oxide crystals and sterile, medical-grade corundum crystals</li>
-</ul>
-
-<p>Húðslípisápan er byltingarkennd skrúbbmeðferð fyrir líkamann.</p>
-<p>Sápa til að nota í sturtu eða baði.</p>
-<p>Inniheldur korundum og magnesium kristalla úr dauðahafinu.</p>
-<p>Nuddað inn í húðina með hringlaga hreyfingum. Leggið áherslu á erfið svæði.</p>
-<p>Vinnur vel á appelsínuhúð/cellolite, stinnir og styrkir og endurnýjar húðina strax í fyrstu meðferð.</p>
-<p>Inngróin hár og húð með mikla örvefssmyndun - virkar vel það.</p>
-<p>Virknin er æðisleg af þessari vöru og hefur hún reynst einnig vel fyrir psoriasis, þurra olnboga, fætur ásamt því að vera besta undirstöðumeðferðin fyrir brúnkukrem eða slíkar vörur/meðferðir,</p>
-<p>Húðslípisápan er til í lavender og lemongrass.</p>
-',
-                'images' => [
-                    [
-                        'name' => 'mens-gift-set-500x5001.png',
-                        'title' => 'Gjafasett Herra',
-                    ],
-                ],
-                'status' => 1,
-                'options' => []
-            ],
-            [
-                'category_id' => 0,
-                'title' => 'Húðslípikrem Dömu',
-                'content' => 
-'
-Auðveld og fljót leið til að
-<ul>
-<li>Jafna húðlit og vinna á litamismun</li>
-<li>Stinnir og þéttir húð</li>
-<li>Eykur Collagen framleiðslu</li>
-<li>Minnkar fínar línur og hrukkur</li>
-<li>Verndar húðina og kemur í veg fyrir ótímabæra öldrun</li>
-<li>Minnkar svitaholur og dregur saman húðina</li>
-</ul>
-
-<p>Gerir allar aðrar vörur sem þú notar eftirá virkari.</p>
-
-<p>Húðslípikremið frá Crystal Peel er unnið úr vandaðri formúlu í vörum sem eru nauðsynlegar fyrir grunn allrar húðumhirðu.<br>
-Þær eru ætlaðar sem virk meðferð til heimanotkunnar og eru fyrsta skrefið að betri húð.<br>
-Húðslípikremið er hægt að nota fyrir allar húðgerðir því að þú stjórnar hversu mikið þú nuddar inn i húðina.<br>
-Húðslípikremið ber sjánlegan árangur strax, jafna og sléttir húðina, minnkar fínar línur, eykur ljóma í húðinni og vinnur vel á ýmsum húðvandamálum s.s örvefur, bólur, opnar húðholur ásamt því að vinna á litablettum i húð t.d eftir sól.<br>
-Með því að nudda kreminu inn í húðina stuðlar þú að endurvakningu í að örvar kollagen framleiðslu sem heldur húðinni stinnri og unglegri.<br>
-Notist 2-3 í viku á andlit og háls, ásamt baki.</p>
-',
-                'images' => [
-                    [
-                        'name' => 'womens-tube.png',
-                        'title' => 'Húðslípikrem Dömu',
-                    ],
-                ],
-                'status' => 1,
-                'options' => []
-            ],
-            [
-                'category_id' => 0,
-                'title' => 'Húðslípikrem Herra',
-                'content' => '
-<p><strong>Crystal Peel Exfoliation krem fyrir herra</strong></p>
-<p>Pre-shave formúla fyrir herra.</p>
-
-<ul>
-<li>Virkar sem hreinsir og skrúbb fyrir herra</li>
-<li>Hefur sannað sig í að vinna gegn rakbólum og inngrónum hárum.</li>
-<li>Með þessari virku vöru verður raksturinn sem aldrei fyrr</li>
-<li>Bætir áferð húðarinnar og gefur hreinleika</li>
-<li>Sjáanlegur árangur með fyrstu notkun</li>
-</ul>
-
-<p>Þessi virka húðmeðferð er engri lík og áferð húðarinnar verður dásamleg. Mælum með góðu rakakremi eftir meðferðina með ríkum sólarvarnarstuðul þar sem er verið að vinna mikið á yfirborði húðarinnar.</p>
-',
-                'images' => [
-                    [
-                        'name' => 'microdermabrasion-exfo-men-2.png',
-                        'title' => 'Húðslípikrem Herra',
-                    ],
-                ],
-                'status' => 1,
-                'options' => []
-            ],
-            [
-                'category_id' => 0,
-                'title' => 'Húðslípisápa stór Lemongras',
-                'content' => '
-<p><strong>Húðslípi-skrúbbsápa fyrir líkamann</strong></p>
-<ul>
-<li>Örvar og endurnýjar</li>
-<li>Tekur í burtu daufa,þurra húð og gefur mýkri og unglegri húð.</li>
-<li>Kemur í veg fyrir inngróin hár og vinnur á cellolite/appelsínuhúð.</li>
-<li>Hjálpar til við t.d þurra olnboga og excem</li>
-<li>Hjálpar til að jafna húðina</li>
-<li>Náttúruleg vegetable soap base with olive oil, shea butter og aloe gel</li>
-</ul>
-<p>Virk innihaldsefni  magnesium oxide crystals and sterile, medical-grade corundum crystals</p>
-
-<p>Húðslípisápan er byltingarkennd skrúbbmeðferð fyrir líkamann.<br>
-Sápa til að nota í sturtu eða baði.<br>
-Inniheldur korundum og magnesium kristalla úr dauðahafinu.<br>
-Nuddað inn í húðina með hringlaga hreyfingum. Leggið áherslu á erfið svæði.<br>
-Vinnur vel á appelsínuhúð/cellolite, stinnir og styrkir og endurnýjar húðina strax í fyrstu meðferð.<br>
-Inngróin hár og húð með mikla örvefssmyndun - virkar vel það.<br>
-Virknin er æðisleg af þessari vöru og hefur hún reynst einnig vel fyrir psoriasis, þurra olnboga, fætur ásamt því að vera besta undirstöðumeðferðin fyrir brúnkukrem eða slíkar vörur/meðferðir.</p>
-<p>Húðslípisápan er til í lavender og lemongrass.</p>',
-                'images' => [
-                    [
-                        'name' => 'hudslipisapa-stor-lemongras.jpg',
-                        'title' => 'Húðslípisápa stór Lemongras',
-                    ],
-                ],
-                'status' => 1,
-                'options' => []
-            ],
-            [
-                'category_id' => 0,
-                'content' => '
-<p><strong>Húðslípi-skrúbbsápa fyrir líkamann</strong></p>
-<ul>
-<li>Örvar og endurnýjar</li>
-<li>Tekur í burtu daufa,þurra húð og gefur mýkri og unglegri húð.</li>
-<li>Kemur í veg fyrir inngróin hár og vinnur á cellolite/appelsínuhúð.</li>
-<li>Hjálpar til við t.d þurra olnboga og excem</li>
-<li>Hjálpar til að jafna húðina</li>
-<li>Náttúruleg vegetable soap base with olive oil, shea butter og aloe gel</li>
-</ul>
-<p>Virk innihaldsefni  magnesium oxide crystals and sterile, medical-grade corundum crystals</p>
-
-<p>Húðslípisápan er byltingarkennd skrúbbmeðferð fyrir líkamann.<br>
-Sápa til að nota í sturtu eða baði.<br>
-Inniheldur korundum og magnesium kristalla úr dauðahafinu.<br>
-Nuddað inn í húðina með hringlaga hreyfingum. Leggið áherslu á erfið svæði.<br>
-Vinnur vel á appelsínuhúð/cellolite, stinnir og styrkir og endurnýjar húðina strax í fyrstu meðferð.<br>
-Inngróin hár og húð með mikla örvefssmyndun - virkar vel það.<br>
-Virknin er æðisleg af þessari vöru og hefur hún reynst einnig vel fyrir psoriasis, þurra olnboga, fætur ásamt því að vera besta undirstöðumeðferðin fyrir brúnkukrem eða slíkar vörur/meðferðir.</p>
-<p>Húðslípisápan er til í lavender og lemongrass.</p>',
-                'title' => 'Húðslípisápa stór Lavender',
-                'images' => [
-                    [
-                        'name' => 'lavendar-soap.png',
-                        'title' => 'Húðslípisápa stór Lavender',
-                    ],
-                ],
-                'status' => 1,
-                'options' => []
-            ],
-            [
-                'category_id' => 0,
-                'title' => 'Varaskrúbbur og Varalyftir',
-                'content' => '
-<p><strong>Lip plumping duo eða varatvenna fyrir fylltari varir</strong></p>
-<p>Þetta sett inniheldur varaskrúbbinn og varaplumperinn Saman gefa þessar vörur frábæran árangur í átt að flottari vörum.</p>
-<p>Inniheldur:</p>
-<ul>
-<li>Crystal Peel Lip Renewal Exfoliator</li>
-<li>Crystal Peel Lip Lift Plumper</li>
-</ul>
-
-<p>Þessi frábæra tvenna er góð fyrir þær sem vilja nota náttúrulega aðferð með því að gera varirnar fylltari. Það má nota varaskrúbbinn aðeins út fyrir varirnar líka ásamt því að nudda yfir sjálfar varirnar. Nudda svo létt yfir með fingrum til að strjúka það mesta af og setja svo glossinn á eftir sem gefur fyllinguna. Einnig frábær lausn fyrir sprungnar varir.</p>
-',
-                'images' => [
-                    [
-                        'name' => 'lip-exfoliator1.png',
-                        'title' => 'Varaskrúbbur og Varalyftir',
-                    ],
-                    [
-                        'name' => 'lip-plumper.png',
-                        'title' => 'Varaskrúbbur og Varalyftir',
-                    ],
-                    [
-                        'name' => 'lips-plump-tripple.png',
-                        'title' => 'Varaskrúbbur og Varalyftir',
-                    ],
-                ],
-                'status' => 1,
-                'options' => []
-            ],
-        ];
-
-
-
         $faker = Faker\Factory::create();
 
         function makePage($page = []) {
@@ -383,25 +88,6 @@ Virknin er æðisleg af þessari vöru og hefur hún reynst einnig vel fyrir pso
             return factory(\App\Category::class)->create($page);
         }
 
-        $pages = [
-            'Vörur', 'Af hverju húðslípun?', 'Hafa samband'
-        ];
-
-        $um_okkur = makePage(['title' => 'Um Crystal Peel', 'slug' => 'um-okkur',
-            'content' => '<h3>The Story of Crystal Peel</h3>
-<p>“The key to beautiful skin lies in exfoliation” says Lynn Lucka founder of the Crystal Peel line, who spent years developing the patented formulas.</p>
-<p>A formulation chemist with more than three decades of experience, Lynn, brought the full breadth of her skill to developing the Crystal Peel Collection. Her Crystal Peel Microdermabrasion products have long been an industry insider secret, sold exclusively by private-labeling to dermatologists, plastic surgeons and medical spas since 1999. With a greatly expanded market demand, Crystal Peel is now being sold under its own name The products are formulated under dermatologic control for maximum safety and efficacy, offering the highest performance available without a doctor’s prescription.</p>
-<p>Crystal Peel products aid in visibly reducing the appearance of fine lines and wrinkles, evening out discoloration, combating acne, reducing  cellulite, and stimulating the production of new collagen.  Leaving skin toned, glowing and fully revitalized. Crystal Peel gives no long term promises, just immediate results.</p>
-<p>The Crystal Peel Collection® has been consistently praised by dermatologists and industry publications (among them, Dermatology Times, American Spa & Dermascope) as an excellent home microdermabrasion regimen.</p>
-        ']);
-
-        makePage(['slug' => 'starfsfolk', 'title' => 'Starfsfólk', 'parent_id' => $um_okkur->id]);
-        makePage([
-            'slug' => 'stadsetning',
-            'title' => 'Staðsetning',
-            'parent_id' => $um_okkur->id,
-            'content' => '<iframe width="100%" height="400" frameborder="0" src="http://ja.is/kort/embedded/?zoom=10&x=359824&y=406933&layer=map&q=Kleifar%C3%A1s+ehf+heildverslun%2C+%C3%81rm%C3%BAla+22"></iframe>',
-        ]);
 
         /*foreach($pages as $page) {
             makePage(['title' => $page]);
@@ -412,56 +98,31 @@ Virknin er æðisleg af þessari vöru og hefur hún reynst einnig vel fyrir pso
         ]);
 
         makePage([
-            'title' => 'Af hverju húðslípun?',
-            'content' => '
-<p><strong>Crystal Peel</strong> eru virkar húðvörur sem sérfræðingar í húðvandamálum þekkja og hafa unnið með en eru nú seldar þannig að hver og einn getur notið þess heima fyrir eða hvar sem er. Vörurnar eru fyrir andlit, varir og líkama.</p>
-
-<h3>Afhverju er þessi grunnur svona mikilvægur?</h3>
-
-<p>Án húðslípunar /exfoliation:</p>
-<ul>
-<li>Varnir húðarinnar eru minni</li>
-<li>Eiturefni og og óhreinindi sitja eftir</li>
-<li>Raki og næring ekki að</li>
-<li>Ójöfnur, roði og inngróin hár eða stíflur</li>
-<li>Opnar húðholur </li>
-<li>litamisjöfnun í húðinni og ójafnvægi</li>
-<li>Gróf húð, flagnandi, hrukkur</li>
-<li>Húð getur verið viðkvæm og laskast auðveldlega</li>
-</ul>
-
-<p>Með húðslípun/exfoliation:</p>
-<ul>
-<li>Húðfrumurnar eru frískar og veita vernd</li>
-<li>Eiturefni og óhreinindi heyra sögunni til</li>
-<li>Raki, D-vítamín og önnur næringarefni komast auðveldlega inn</li>
-<li>Húðin hreinsast auðveldlega og kemur í veg fyrir stíflur</li>
-<li>Húðin þéttist og dregst saman og er líflegri</li>
-<li>Full af heilbrigði og silkimjúk</li>
-<li>Húðin verður mun sterkari</li>
-</ul>
-
-<h3>Afhverju ættirðu að velja Crystal Peel?</h3>
-<p>Það eru ófáar svipaðar vörulínur á markaðnum í dag. Vörur með virkum efnum sem eru markaðsettar til heimanotkunar en Crystal Peel á þann heiður að vera brautryðjendur þar, og byrjaði það allt með skrúbbsápunni frá Crystal Peel sem að eigandinn og stofnandinn Lynn Lucka, sem er efnafræðingur, seldi um árabil beint til lýtalækna, húðsérfræðinga og á heilsulindum víða.</p>
-
-<p>Með auknum viðskiptum var ákveðið að setja línuna á markað fyrir almenning.<br>
-Crystal Peel hefur þann heiður að geta sagt að líkamsskrúbbsápan og húðslípikremið séu fyrstu vörur sinnar tegundar. Enda liggur að baki áralöng vinna í þróun vörulínunnar til að gera hana fremri en sambærilegar vörur.<br>
-Með notkun á læknisviðurkendu corundum - og magnisíum oxide kristöllunum. Sömu kristallar og eru notaðir í húðslípimeðferðum hjá meðferðaraðilum hefur Crystal Peel skapað sína sérstöðu.</p>
-
-<p>Það sem skiptir líka miklu máli í þessu er að ekki eru allar vörur sem hafa nægilega góð áhrif á húðina að þessu tagi, þannig að það að velja rétt skiptir máli fyrir toppárangur.</p>
-
-<p>Gangi ykkur vel.</p>',
+            'title' => 'Hreinsun',
+            'content' => '<p>Meginmarkmiðið með hreinsun á dúnsængum er að ná öllum svita og utanaðkomandi raka úr dúninum. Dúnninn lyftist upp inní sænginni og ef þetta er gert á um það bil 3 ára fresti þá lengist endingartími sængurinnar um mörg ár.</p>
+<p>Efnið sem notað er við hreinsunina er vistvænt og brotnar niður í náttúrunni á innan við einum sólarhring. Þetta er auðvitað undirstaða heilbrigðis og þess að þú sofir betur.</p>
+<p>Við hreinsum sængur og kodda og einnig bætum við nýjum dún í anda-, svana-, snjógæsa- og æðardúnsængur.</p>
+<p>Skiptum einnig um utanyfir-ver ef þess er þörf.</p>
+<p>Við höfum 50 ára reynslu í faginu</p>'
         ]);
 
+$um_okkur = makePage(['title' => 'Fyrirtækið', 'slug' => 'um-okkur',
+            'content' => '<p>Dún og fiður er leiðandi fyrirtæki í framleiðslu, endurnýjun og hreinsun á sængum, koddum, púðum, pullum og skyldum vörum úr náttúrlegum dún og fiðri.</p>
+<p>Dún og fiður byggir á um 50 ára gömlum merg, í eigu sömu fjölskyldu allan tímann. Á þessum tíma hefur safnast saman mjög mikilvæg þekking og reynsla á öllu sem lýtur að dún og fiðri, efnum því tengdu og meðhöndlun sængurfatnaðar.</p>
+<p>Dún og fiður var stofnað 1. febrúar 1959 og var fyrst til húsa að Kirkjuteig 29 í Reykjavík, en 3. ágúst 1963 flutti fyrirtækið í eigið húsnæði að Vatnsstíg 3, Reykjavík. Dún og fiður er nú til húsa á Laugavegi 86.</p>
+<p>Dún og fiður hefur með áratuga starfsemi skapað sér fastan sess í hugum borgarbúa og annarra landsmanna. Því hefur það verið stefna fyrirtækisins að breyta engu þar um né að vera með útsölur eða útibú á öðrum stöðum.</p>
+        ']);
+
+        makePage(['slug' => 'starfsfolk', 'title' => 'Starfsfólk', 'parent_id' => $um_okkur->id]);
         makePage([
-            'title' => 'Hafa samband',
-            'content' => '
-<p>Hægt er að ná í okkur í síma 571-6990 eða 895-0575 Berglind</p>
-<p>E-mail:crystalpeel@gmail.com</p>
-<p>Finnið okkur á facebook www.facebook.com/crystalpeelisland</p>',
+            'slug' => 'stadsetning',
+            'title' => 'Staðsetning',
+            'parent_id' => $um_okkur->id,
+            'content' => '<iframe width="100%" height="400" frameborder="0" src="http://ja.is/kort/embedded/?zoom=10&x=359824&y=406933&layer=map&q=Kleifar%C3%A1s+ehf+heildverslun%2C+%C3%81rm%C3%BAla+22"></iframe>',
         ]);
 
-        $pics = ['slide1.jpg', 'slide2.jpg', 'slide3.jpg', 'slide4.jpg', 'slide5.jpg'];
+
+        $pics = ['myndBjarni01.jpg', '12.jpg', '10.jpg'];
         $forsidumyndir = makePage(['title' => 'Forsíðumyndir', 'slug' => '_forsidumyndir', 'status' => 0]);
         foreach($pics as $k => $v) {
             makePage(['title' => $v, 'parent_id' => $forsidumyndir->id, 'images' => [['name'=>$v]]]);
@@ -470,9 +131,9 @@ Með notkun á læknisviðurkendu corundum - og magnisíum oxide kristöllunum. 
         $flokkur1 = makeCategory(['title' => 'Flokkur 1', 'images' => getImages(3)]);
         $flokkur2 = makeCategory(['title' => 'Flokkur 2', 'images' => getImages(3)]);
 
-        foreach($vorur as $vara) {
+        /*foreach($vorur as $vara) {
             makeProduct($vara);
-        }
+        }*/
 
         Model::reguard();
     }

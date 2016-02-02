@@ -2,11 +2,11 @@
 
 return [
 
-    'site_title' => 'Crystal Peel',
+    'site_title' => 'Dún & fiður',
 
-    'site_description' => 'Crystal Peel',
+    'site_description' => 'Dún & fiður',
 
-    'company_name' => 'Crystal Peel',
+    'company_name' => 'Dún & fiður',
     'company_email' => 'test@test.is',
 
     'email' => 'test@test.is',
