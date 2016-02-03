@@ -75,7 +75,7 @@
                         <div class="uk-grid uk-grid-collapse">
                             <div class="uk-width-medium-3-5 uk-width-large-3-4">
                                 <div class="forsidumyndir">
-                                    <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true, autoplayInterval: 3000">
+                                    <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true, autoplayInterval: 3000}">
                                         <ul class="uk-slideshow">
                                             @foreach($forsidumyndir as $key => $mynd)
                                                 <li>
