@@ -71,36 +71,41 @@
 
             @if(frontpage())
                 @if(isset($forsidumyndir) && !$forsidumyndir->isEmpty())
-                    <div class="uk-grid uk-grid-collapse">
-                        <div class="uk-width-medium-2-3">
-                            <div class="forsidumyndir">
-                                <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true, autoplayInterval: 3000">
-                                    <ul class="uk-slideshow">
-                                        @foreach($forsidumyndir as $key => $mynd)
-                                            <li>
-                                                <div class="forsidumynd" style="background-image: url('/imagecache/banner/{{ $mynd->img()->first() }}');">
-                                                </div>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
-                                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                    <div class="front">
+                        <div class="uk-grid uk-grid-collapse">
+                            <div class="uk-width-medium-3-5 uk-width-large-3-4">
+                                <div class="forsidumyndir">
+                                    <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true, autoplayInterval: 3000">
+                                        <ul class="uk-slideshow">
+                                            @foreach($forsidumyndir as $key => $mynd)
+                                                <li>
+                                                    <div class="forsidumynd" style="background-image: url('/imagecache/banner/{{ $mynd->img()->first() }}');">
+                                                    </div>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                        @if(count($forsidumyndir) > 0)
+                                            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                                            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-width-medium-2-5 uk-width-large-1-4 uk-flex">
+                                <div class="fullbar uk-flex uk-flex-middle uk-flex-center uk-flex-wrap">
+                                    <h4 data-uk-scrollspy="{cls:'uk-animation-slide-bottom uk-animation-3'}">Dún og fiður ehf framleiðir sjálf allar söluvörur sínar s.s. sængur, kodda, púða og pullur að undanskildum utanyfirverum og lökum.</h4>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="uk-width-medium-1-3 uk-flex">
-                            <div class="fullbar uk-flex uk-flex-middle uk-flex-center uk-flex-wrap">
-                                <h4>Dún og fiður ehf framleiðir sjálf allar söluvörur sínar s.s. sængur, kodda, púða og pullur að undanskildum utanyfirverum og lökum.</h4>
-                            </div>
-                        </div>
-                    </div>
-                @endif
+                    @endif
+                </div>
             @endif
+        
 
             @if(frontpage())
-                <div class="fullbar yellow uk-flex uk-flex-middle uk-flex-center uk-flex-wrap">
-                    <h2>Síðan 1959</h2>
+                <div class="fullbar yellow uk-flex uk-flex-middle uk-flex-center uk-flex-wrap" style="background-image: url('/img/fjodur2.png'); background-position: 65% center; background-repeat: no-repeat; background-size: contain;">
+                    <h2 data-uk-scrollspy="{cls:'uk-animation-slide-left uk-animation-3', delay: 600}">Síðan 1959</h2>
                 </div>
             @endif
 
@@ -139,24 +144,35 @@
             @if(frontpage())
                 <div>
                     <div class="boxes uk-grid uk-grid-collapse">
-                        <div class="uk-width-small-1-2">
+                        <div class="uk-width-medium-2-5">
                             <div class="box uk-flex">
-                                <div class="box__centertext bg-grey uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
-                                    <h3>Opnunartímar</h3>
-                                    <ul>
-                                        <li>Virkir dagar</li>
-                                        <li>09:00 - 18:00</li>
-                                        <li>Laugardagar</li>
-                                        <li>11:00 - 16:00</li>
-                                    </ul>
+                                <div class="box__centertext bg-grey uk-flex uk-flex-center uk-flex-middle uk-flex-wrap uk-flex-column">
+                                    <div>
+                                        <h3><i class="uk-icon-clock-o uk-margin-right"></i>Opnunartímar</h3>
+                                        <div class="opnunartimar">
+                                            <div>
+                                                Virkir dagar
+                                                <span>09:00 - 18:00</span>
+                                            </div>
+                                            <div>
+                                                Laugardagar
+                                                <span>11:00 - 16:00</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="uk-width-small-1-2">
-                            <div class="box">
-                                <h3>Staðsetning</h3>
-                                <p>Kíktu á kortið</p>
+                        <div class="uk-width-medium-3-5">
+                            <div class="box uk-flex" style="background-image: url('/imagecache/original/bg-kort.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+                                <a href="/stadsetning/"
+                                   class="box__centertext box--hover uk-flex uk-flex-center uk-flex-middle uk-flex-wrap uk-flex-column">
+                                    <h3><i class="uk-icon-map-marker uk-margin-right"></i>Staðsetning okkar</h3>
+                                    <div>
+                                        Kíktu á kortið
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -190,7 +206,6 @@
                 </nav>
             </div>
         </div>
-
 
         <script src="/js/scripts.js?v=2"></script>
     </body>

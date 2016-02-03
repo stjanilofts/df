@@ -9,7 +9,7 @@ html {
   background: #EEE;
   color: #a7a9ac !important;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 36px;
   font-family: "Cabin", sans-serif; }
   html em {
     color: #a7a9ac !important; }
@@ -17,52 +17,52 @@ html {
   html a.takki,
   html button.takki {
     font-size: 18px;
-    line-height: 24px; }
+    line-height: 36px; }
   html h1 {
     font-size: 3rem;
-    line-height: 3.6rem; }
+    line-height: 4rem; }
   html h2 {
-    font-size: 2.5rem;
-    line-height: 3.1rem; }
+    font-size: 2.2rem;
+    line-height: 3.2rem; }
   html h3 {
-    font-size: 2rem;
-    line-height: 2.6rem; }
-  html h4 {
     font-size: 1.8rem;
+    line-height: 2.8rem; }
+  html h4 {
+    font-size: 1.4rem;
     line-height: 2.4rem; }
   html h5 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 2.2rem; }
   html h6 {
-    font-size: 1.4rem;
+    font-size: 1rem;
     line-height: 2rem; }
   @media (max-width: 1400px) {
     html {
+      font-size: 17px;
+      line-height: 34px; }
+      html .takki,
+      html a.takki,
+      html button.takki {
+        font-size: 17px;
+        line-height: 34px; } }
+  @media (max-width: 1100px) {
+    html {
       font-size: 16px;
-      line-height: 28px; }
+      line-height: 32px; }
       html .takki,
       html a.takki,
       html button.takki {
         font-size: 16px;
-        line-height: 22px; } }
-  @media (max-width: 1100px) {
-    html {
-      font-size: 14px;
-      line-height: 26px; }
-      html .takki,
-      html a.takki,
-      html button.takki {
-        font-size: 14px;
-        line-height: 20px; } }
+        line-height: 32px; } }
   @media (max-width: 800px) {
     html {
-      font-size: 12px;
-      line-height: 24px; }
+      font-size: 15px;
+      line-height: 30px; }
       html .takki,
       html a.takki,
       html button.takki {
-        font-size: 12px;
-        line-height: 18px; } }
+        font-size: 15px;
+        line-height: 30px; } }
   html h1, html h2, html h3, html h4, html h5, html h6 {
     font-family: "Cabin", sans-serif;
     font-weight: bold;
@@ -79,7 +79,7 @@ html {
 a.takki,
 button.takki {
   background: #d7bc02;
-  color: #3a3a3a;
+  color: #2e2d2b;
   display: inline-block !important;
   box-sizing: border-box !important;
   text-align: center;
@@ -105,7 +105,7 @@ button.takki {
   button.takki.active,
   button.takki:hover {
     background: #a49002;
-    color: #3a3a3a;
+    color: #2e2d2b;
     box-shadow: 2px 2px 0px #808387; }
 
 body a {
@@ -136,6 +136,13 @@ form.basic label {
       background: #ef8fa3 !important; }
 
 /* FORSÍÐUMYNDIR */
+.front {
+  min-height: 700px;
+  background: #a7a9ac; }
+  @media (max-width: 1400px) {
+    .front {
+      min-height: auto !important; } }
+
 .forsidumyndir {
   position: relative; }
   .forsidumyndir .forsidumynd {
@@ -190,7 +197,7 @@ nav.offcanvas div {
       color: #FFF; }
 
 nav.top {
-  background: #d7bc02;
+  background: #2e2d2b;
   max-width: 1600px;
   margin: 0 auto;
   display: -webkit-flex;
@@ -207,7 +214,7 @@ nav.top {
   flex: 1 1 100%; }
   nav.top .being_viewed > a {
     color: #FFF !important;
-    background: #a7a9ac !important; }
+    background: #d7bc02 !important; }
   nav.top a {
     color: #FFF;
     font-size: 1em;
@@ -221,10 +228,11 @@ nav.top {
     transition: color 0.2s, background 0.2s;
     font-weight: 600; }
     nav.top a:hover {
+      color: #d7bc02;
       background: #d1d2d4; }
   nav.top > div.active > a {
-    color: #FFF;
-    background: #a7a9ac; }
+    color: #FFF !important;
+    background: #d7bc02 !important; }
   nav.top > div {
     position: relative;
     -webkit-flex: 1 1 100%;
@@ -422,7 +430,7 @@ header {
 .footer {
   text-align: center;
   color: #FFF;
-  background: #3a3a3a;
+  background: #2e2d2b;
   margin: 0 auto;
   box-sizing: border-box;
   font-weight: bold;
@@ -461,13 +469,15 @@ header {
   @media (max-width: 1100px) {
     .box {
       height: 250px; } }
+  .box h1, .box h2, .box h3, .box h4, .box h5, .box h6 {
+    color: #FFF; }
   .box .bg-yellow {
-    background: #d7bc02;
+    background-color: #d7bc02;
     color: #FFF; }
     .box .bg-yellow h1, .box .bg-yellow h2, .box .bg-yellow h3, .box .bg-yellow h4, .box .bg-yellow h5, .box .bg-yellow h6 {
       color: #FFF; }
   .box .bg-grey {
-    background: #a7a9ac;
+    background-color: #a7a9ac;
     color: #FFF; }
     .box .bg-grey h1, .box .bg-grey h2, .box .bg-grey h3, .box .bg-grey h4, .box .bg-grey h5, .box .bg-grey h6 {
       color: #FFF; }
@@ -485,7 +495,8 @@ header {
       opacity: 0.5; }
   .box--hover:hover {
     text-decoration: none;
-    background: rgba(215, 188, 2, 0.5); }
+    background: rgba(215, 188, 2, 0.5);
+    color: #FFF; }
   .box__centertext {
     z-index: 2;
     width: 100%;
@@ -594,5 +605,24 @@ header {
 .uk-slidenav-position .uk-slidenav-next {
 	right: 30px !important;
 }*/
+.uk-animation-5 {
+  -webkit-animation-duration: 5s !important;
+  animation-duration: 5s !important; }
+
+.uk-animation-3 {
+  -webkit-animation-duration: 3s !important;
+  animation-duration: 3s !important; }
+
+.uk-animation-1 {
+  -webkit-animation-duration: 1s !important;
+  animation-duration: 1s !important; }
+
+.opnunartimar div {
+  text-align: center;
+  clear: both; }
+  .opnunartimar div span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em; }
 
 /*# sourceMappingURL=app.css.map */

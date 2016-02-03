@@ -5,7 +5,7 @@ $yellow-dark: darken($yellow, 10%);
 $yellow-lite: desaturate(lighten($yellow, 50%), 50%);
 $grey: #a7a9ac;
 $grey2: #d1d2d4;
-$dark: #3a3a3a;
+$dark: #2e2d2b;
 $grey2-dark: darken($grey2, 65%);
 $max-width: 1600px;
 $font1: 'Cabin', sans-serif;
@@ -28,7 +28,7 @@ html {
 	}
 
 	font-size: 18px;
-	line-height: 30px;
+	line-height: 36px;
 
 	font-family: $font1;
 
@@ -36,64 +36,64 @@ html {
 	a.takki,
 	button.takki {
 		font-size: 18px;
-		line-height: 24px;
+		line-height: 36px;
 	}
 
 	h1 {
 		font-size: 3rem;
-		line-height: 3.6rem;
+		line-height: 4rem;
 	}
 	h2 {
-		font-size: 2.5rem;
-		line-height: 3.1rem;
+		font-size: 2.2rem;
+		line-height: 3.2rem;
 	}
 	h3 {
-		font-size: 2rem;
-		line-height: 2.6rem;
+		font-size: 1.8rem;
+		line-height: 2.8rem;
 	}
 	h4 {
-		font-size: 1.8rem;
+		font-size: 1.4rem;
 		line-height: 2.4rem;
 	}
 	h5 {
-		font-size: 1.6rem;
+		font-size: 1.2rem;
 		line-height: 2.2rem;
 	}
 	h6 {
-		font-size: 1.4rem;
+		font-size: 1rem;
 		line-height: 2rem;
 	}
 
 	@media (max-width: 1400px) {
-		font-size: 16px;
-		line-height: 28px;
+		font-size: 17px;
+		line-height: 34px;
 		.takki,
 		a.takki,
 		button.takki {
-			font-size: 16px;
-			line-height: 22px;		
+			font-size: 17px;
+			line-height: 34px;		
 		}
 	}
 
 	@media (max-width: 1100px) {
-		font-size: 14px;
-		line-height: 26px;
+		font-size: 16px;
+		line-height: 32px;
 		.takki,
 		a.takki,
 		button.takki {
-			font-size: 14px;
-			line-height: 20px;		
+			font-size: 16px;
+			line-height: 32px;		
 		}
 	}
 
 	@media (max-width: 800px) {
-		font-size: 12px;
-		line-height: 24px;
+		font-size: 15px;
+		line-height: 30px;
 		.takki,
 		a.takki,
 		button.takki {
-			font-size: 12px;
-			line-height: 18px;		
+			font-size: 15px;
+			line-height: 30px;		
 		}
 	}
 
@@ -205,6 +205,13 @@ form {
 
 
 /* FORSÍÐUMYNDIR */
+.front {
+	min-height: 700px;
+	@media (max-width: 1400px) {
+		min-height: auto !important;
+	}
+	background: $grey;
+}
 .forsidumyndir {
 	position: relative;
 
@@ -282,7 +289,7 @@ nav {
 	}
 
 	&.top {
-		background: $yellow;
+		background: $dark;
 		max-width: $max-width;
 		margin: 0 auto;
 		display: flex;
@@ -293,7 +300,7 @@ nav {
 		.being_viewed {
 			> a {
 				color: #FFF !important;
-				background: $grey !important;
+				background: $yellow !important;
 			}
 		}
 
@@ -309,6 +316,7 @@ nav {
 			text-align: center;
 			transition: color 0.2s, background 0.2s;
 			&:hover {
+				color: $yellow;
 				background: $grey2;
 			}
 			font-weight: 600;
@@ -317,8 +325,8 @@ nav {
 		> div {
 			&.active {
 				> a {
-					color: #FFF;
-					background: $grey;
+					color: #FFF !important;
+					background: $yellow !important;
 				}	
 			}
 		}
@@ -653,8 +661,13 @@ header {
 		height: 250px;
 	}
 
+	h1, h2, h3, h4, h5, h6 {
+		color: #FFF;
+	}
+
+
 	.bg-yellow {
-		background: $yellow;
+		background-color: $yellow;
 		color: #FFF;
 		h1, h2, h3, h4, h5, h6 {
 			color: #FFF;
@@ -662,7 +675,7 @@ header {
 	}
 
 	.bg-grey {
-		background: $grey;
+		background-color: $grey;
 		color: #FFF;
 		h1, h2, h3, h4, h5, h6 {
 			color: #FFF;
@@ -690,6 +703,7 @@ header {
 		&:hover {
 			text-decoration: none;
 			background: rgba($yellow, 0.5);
+			color: #FFF;
 		}
 	}
 
@@ -879,3 +893,34 @@ header {
 .uk-slidenav-position .uk-slidenav-next {
 	right: 30px !important;
 }*/
+
+.uk-animation-5 {
+    -webkit-animation-duration: 5s !important;
+    animation-duration: 5s !important;
+}
+
+.uk-animation-3 {
+    -webkit-animation-duration: 3s !important;
+    animation-duration: 3s !important;
+}
+
+.uk-animation-1 {
+    -webkit-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+}
+
+
+
+
+
+.opnunartimar {
+	div {
+		text-align: center;
+		clear: both;
+		span {
+			font-weight: bold;
+			display: block;
+			margin-bottom: 1em;
+		}
+	}
+}

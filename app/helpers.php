@@ -246,7 +246,7 @@ function kalMenu($args = array(), $pages = false, $lvl = 1, &$menu = "", &$paths
         $menu .= "<li class=''><a href='#heim' data-uk-smooth-scroll>Heim</a></li>";
     } else {
         if($menu == '' && !array_key_exists('hidehome', $args)) {
-            $menu .= '<div class="'.(\Request::is('/') ? 'active' : '').'"><a href="/">Heim</a></div>';
+            $menu .= '<div class="'.(\Request::is('/') ? 'active being_viewed' : '').'"><a href="/">Heim</a></div>';
         }
     }
 
