@@ -200,17 +200,21 @@ nav.offcanvas div {
   margin: 0; }
   nav.offcanvas div.being_viewed > a {
     text-decoration: none;
-    background: #a49002; }
+    background: #d7bc02; }
   nav.offcanvas div a {
     font-weight: 600;
     font-size: 120%;
     display: block;
-    padding: 0.5em;
+    font-size: 1em;
+    padding: 1em;
+    text-transform: uppercase;
     margin: 0;
-    color: #FFF; }
+    color: #FFF;
+    transition: color 0.2s, background 0.2s; }
     nav.offcanvas div a:hover {
       text-decoration: none;
-      color: #FFF; }
+      color: #d7bc02;
+      background: #d1d2d4; }
 
 nav.top {
   background: #2e2d2b;
@@ -229,8 +233,14 @@ nav.top {
   -ms-flex: 1 1 100%;
   flex: 1 1 100%; }
   nav.top .being_viewed > a {
-    color: #FFF !important;
-    background: #d7bc02 !important; }
+    color: #FFF;
+    background: #d7bc02; }
+  nav.top div a {
+    transition: color 0.2s, background 0.2s; }
+    nav.top div a:hover {
+      text-decoration: none;
+      color: #d7bc02;
+      background: #d1d2d4; }
   nav.top a {
     color: #FFF;
     font-size: 1em;
@@ -244,11 +254,12 @@ nav.top {
     transition: color 0.2s, background 0.2s;
     font-weight: 600; }
     nav.top a:hover {
+      text-decoration: none;
       color: #d7bc02;
       background: #d1d2d4; }
   nav.top > div.active > a {
-    color: #FFF !important;
-    background: #d7bc02 !important; }
+    color: #FFF;
+    background: #d7bc02; }
   nav.top > div {
     position: relative;
     -webkit-flex: 1 1 100%;
@@ -470,13 +481,12 @@ header {
           .footer ul.bottom-ul li:after {
             display: none !important; } }
       .footer ul.bottom-ul li:after {
-        content: "\f111";
+        /*content: "\f111";*/
+        content: "/";
         padding-left: 15px;
         padding-right: 15px;
         color: #d7bc02;
-        position: relative;
-        bottom: 3px;
-        font: normal normal normal 0.5rem FontAwesome !important; }
+        position: relative; }
       .footer ul.bottom-ul li:last-child:after {
         content: "";
         padding: 0 !important;

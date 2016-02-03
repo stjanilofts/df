@@ -66,7 +66,7 @@
                     {!! kalMenuExpandedAll(['hidesmall' => true]) !!}
                     @include('frontend.cart.widget', ['elementId' => 'cart-widget-nav'])
                     <div>
-                        <a href="#my-id" data-uk-offcanvas><i class="uk-icon-bars uk-margin-right"></i>Sjá meira</a>
+                        <a href="#my-id" data-uk-offcanvas><i class="uk-icon-bars uk-margin-right"></i>Meira</a>
                     </div>
                 </nav>
             </div>

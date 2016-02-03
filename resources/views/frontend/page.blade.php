@@ -13,7 +13,7 @@
 	<div class="page">
 
 		@if($showmenu)
-			<div class="uk-grid uk-grid-small" data-uk-grid-margin>
+			<div class="uk-grid uk-grid-medium" data-uk-grid-margin>
 				<div class="uk-width-medium-1-4">
 					<nav class="submenu">
 						{!! kalMenuFrom(\Request::segment(1)) !!}

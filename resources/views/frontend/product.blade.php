@@ -87,8 +87,7 @@
 							<span v-if="isProcessing">
 							Augnablik... <i class="uk-icon-spin uk-icon-spinner uk-margin-left"></i>
 							</span>
-						</button>
-						<a v-if="added" href="/karfa/" class="takki takki--neutral" :disabled="isProcessing">
+						</button><a v-if="added" href="/karfa/" class="takki takki--neutral" :disabled="isProcessing">
 							Skoða körfu<i class="uk-icon-arrow-circle-o-right uk-margin-left"></i>
 						</a>
 					</div>

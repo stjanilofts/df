@@ -285,20 +285,24 @@ nav {
 			&.being_viewed {
 				> a {
 					text-decoration: none;
-					background: $yellow-dark;					
+					background: $yellow;					
 				}
 			}
 			a {
 				font-weight: 600;
 				font-size: 120%;
 				display: block;
-				padding: 0.5em;
+				font-size: 1em;
+				padding: 1em;
+				text-transform: uppercase;
 				margin: 0;
 				color: #FFF;
 				&:hover {
 					text-decoration: none;
-					color: #FFF;
+					color: $yellow;
+					background: $grey2;
 				}
+				transition: color 0.2s, background 0.2s;
 			}
 		}
 	}
@@ -314,8 +318,19 @@ nav {
 
 		.being_viewed {
 			> a {
-				color: #FFF !important;
-				background: $yellow !important;
+				color: #FFF;
+				background: $yellow;
+			}
+		}
+
+		div {
+			a {
+				transition: color 0.2s, background 0.2s;
+				&:hover {
+					text-decoration: none;
+					color: $yellow;
+					background: $grey2;
+				}				
 			}
 		}
 
@@ -331,6 +346,7 @@ nav {
 			text-align: center;
 			transition: color 0.2s, background 0.2s;
 			&:hover {
+				text-decoration: none;
 				color: $yellow;
 				background: $grey2;
 			}
@@ -340,8 +356,8 @@ nav {
 		> div {
 			&.active {
 				> a {
-					color: #FFF !important;
-					background: $yellow !important;
+					color: #FFF;
+					background: $yellow;
 				}	
 			}
 		}
@@ -642,13 +658,12 @@ header {
 			}
 
 			&:after {
-				content: "\f111";
+				/*content: "\f111";*/
+				content: "/";
 				padding-left: 15px;
 				padding-right: 15px;
 				color: $yellow;
 				position: relative;
-				bottom: 3px;
-				font: normal normal normal 0.5rem FontAwesome !important;
 			}
 			&:last-child:after {
 				content: "";
