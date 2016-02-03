@@ -133,6 +133,17 @@ button.takki {
 
 body {
 	a {
+		&.fbcolor {
+			i {
+				transition: color 0.2s;
+				color: #3b5998;
+			}
+			&:hover {
+				i {
+					color: #8b9dc3;
+				}
+			}
+		}
 		color: $yellow;
 		transition: color 0.2s;
 		&:hover {
@@ -221,7 +232,11 @@ nav {
 
 	&.submenu {
 		div {
-			&.being_viewed {
+			a {
+				@extend .takki;
+				width: 100%;
+			}
+			/*&.being_viewed {
 				a {
 					text-decoration: none;
 					background: $yellow-dark;					
@@ -240,7 +255,7 @@ nav {
 					text-decoration: none;
 					background: $yellow-dark;
 				}
-			}
+			}*/
 		}
 	}
 
@@ -597,7 +612,16 @@ header {
 		display: inline-block;
 		li {
 			display: inline;
+			font-size: 0.85rem;
 			text-align: center;
+
+			@media (max-width: 480px) {
+				display: block;
+				clear: both;
+				&:after {
+					display: none !important;
+				}
+			}
 
 			&:after {
 				content: "\f111";
@@ -624,9 +648,9 @@ header {
 	padding: 2em;
 	width: 100%;
 	a {
-		color: #FFF !important;
+		color: #FFF;
 		&:hover {
-			color: #FFF !important;
+			color: #FFF;
 		}
 	}
 }

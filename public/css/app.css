@@ -14,8 +14,10 @@ html {
   font-family: "Cabin", sans-serif; }
   html em {
     color: #a7a9ac !important; }
-  html .takki,
+  html .takki, html nav.submenu div a, nav.submenu div html a,
   html a.takki,
+  html nav.submenu div a, nav.submenu div
+  html a,
   html button.takki {
     font-family: "Cabin", sans-serif !important;
     font-size: 18px !important;
@@ -58,8 +60,9 @@ html {
     color: #a7a9ac; }
 
 /* TAKKI */
-.takki,
+.takki, nav.submenu div a,
 a.takki,
+nav.submenu div a,
 button.takki {
   margin-top: 0;
   margin-left: 0;
@@ -77,15 +80,19 @@ button.takki {
   text-transform: uppercase;
   transition: background 0.2s, color 0.2s, border 0.2s; }
   @media (max-width: 480px) {
-    .takki,
+    .takki, nav.submenu div a,
     a.takki,
+    nav.submenu div a,
     button.takki {
       display: block !important;
       width: 100%; } }
-  .takki.focus, .takki.active, .takki:hover,
+  .takki.focus, nav.submenu div a.focus, .takki.active, nav.submenu div a.active, .takki:hover, nav.submenu div a:hover,
   a.takki.focus,
+  nav.submenu div a.focus,
   a.takki.active,
+  nav.submenu div a.active,
   a.takki:hover,
+  nav.submenu div a:hover,
   button.takki.focus,
   button.takki.active,
   button.takki:hover {
@@ -96,6 +103,11 @@ button.takki {
 body a {
   color: #d7bc02;
   transition: color 0.2s; }
+  body a.fbcolor i {
+    transition: color 0.2s;
+    color: #3b5998; }
+  body a.fbcolor:hover i {
+    color: #8b9dc3; }
   body a:hover {
     color: #a49002; }
 
@@ -150,21 +162,29 @@ nav ul {
   margin: 0;
   padding: 0; }
 
-nav.submenu div.being_viewed a {
-  text-decoration: none;
-  background: #a49002; }
+nav.submenu div {
+  /*&.being_viewed {
+				a {
+					text-decoration: none;
+					background: $yellow-dark;					
+				}
+			}
+			a {
+				background: $yellow;
+				font-weight: 600;
+				color: #FFF;
+				padding: 0.5em;
+				margin-bottom: 0.5em;
+				display: block;
+				transition: background 0.2s;
 
-nav.submenu div a {
-  background: #d7bc02;
-  font-weight: 600;
-  color: #FFF;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
-  display: block;
-  transition: background 0.2s; }
-  nav.submenu div a:hover {
-    text-decoration: none;
-    background: #a49002; }
+				&:hover {
+					text-decoration: none;
+					background: $yellow-dark;
+				}
+			}*/ }
+  nav.submenu div a {
+    width: 100%; }
 
 nav.offcanvas div {
   display: block;
@@ -433,7 +453,14 @@ header {
     display: inline-block; }
     .footer ul.bottom-ul li {
       display: inline;
+      font-size: 0.85rem;
       text-align: center; }
+      @media (max-width: 480px) {
+        .footer ul.bottom-ul li {
+          display: block;
+          clear: both; }
+          .footer ul.bottom-ul li:after {
+            display: none !important; } }
       .footer ul.bottom-ul li:after {
         content: "\f111";
         padding-left: 15px;
@@ -447,9 +474,9 @@ header {
         padding: 0 !important;
         display: none !important; }
   .footer a {
-    color: #FFF !important; }
+    color: #FFF; }
     .footer a:hover {
-      color: #FFF !important; }
+      color: #FFF; }
 
 .page-wrap {
   display: -webkit-flex;

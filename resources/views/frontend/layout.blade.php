@@ -198,9 +198,9 @@
                     <li>Kt. 670901 2540</li>
                     <li>Laugavegur 86, 101 Reykjavík</li>
                     <li><i class="uk-icon-phone-square uk-margin-right"></i>511 2004</li>
-                    <li><i class="uk-icon-fax uk-margin-right"></i> 511 2003</li>
+                    <li><i class="uk-icon-fax uk-margin-right"></i>511 2003</li>
                     <li><a href="mailto:dunogfidur@dunogfidur.is"><i class="uk-icon-envelope-o uk-margin-right"></i>dunogfidur@dunogfidur.is</a></li>
-                    <li><a href="https://www.facebook.com/dunogfidur.is" title="Dún og fiður á Facebook"><i class="uk-icon-facebook-square uk-icon-small"></i></a></li>
+                    <li><a href="https://www.facebook.com/dunogfidur.is" class="fbcolor" title="Dún og fiður á Facebook"><i class="uk-icon-facebook-square uk-icon-small uk-margin-right"></i>Facebook</a></li>
                 </ul>
             </div>
 

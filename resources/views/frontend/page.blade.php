@@ -8,7 +8,7 @@
 
 		@if($page->hasSubs() || $page->hasParent())
 			<div class="uk-grid" data-uk-grid-margin>
-				<div class="uk-width-medium-1-4 uk-hidden-small">
+				<div class="uk-width-medium-1-4">
 					<nav class="submenu">
 						{!! kalMenuFrom(\Request::segment(1)) !!}
 					</nav>
