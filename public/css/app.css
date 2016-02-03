@@ -478,6 +478,14 @@ header {
     .footer a:hover {
       color: #FFF; }
 
+.page {
+  margin: 0 auto;
+  max-width: 1100px; }
+
+.page-content {
+  margin: 0 auto;
+  max-width: 800px; }
+
 .page-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -624,6 +632,20 @@ header {
     color: #d7bc02; }
     #cart-widget a:hover {
       color: #d7bc02; }
+
+#cart-widget-nav {
+  position: relative; }
+  #cart-widget-nav .cart-widget-nav__link {
+    display: block; }
+  #cart-widget-nav .cart-widget-nav__info {
+    border-radius: 50%;
+    background: #FFF;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    color: #2e2d2b;
+    text-align: center !important; }
 
 .fullbar {
   background: #a7a9ac;

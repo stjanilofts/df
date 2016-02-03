@@ -51,9 +51,10 @@
                     <div class="uk-width-medium-1-3 uk-text-center">
                         <a href="/"><img src="/img/logo.png" /></a>
                     </div>
-                    <div class="uk-width-medium-1-3 cart-widget-container uk-flex uk-flex-center uk-text-center uk-flex-middle">
-                        @include('frontend.cart.widget')
-                    </div>
+
+                    {{-- <div class="uk-width-medium-1-3 cart-widget-container uk-flex uk-flex-center uk-text-center uk-flex-middle">
+                        @include('frontend.cart.widget', ['elementId' => 'cart-widget'])
+                    </div> --}}
                 </div>
             </div>
 
@@ -61,6 +62,7 @@
             <div class="menu normal">
                 <nav class="top">
                     {!! kalMenuExpandedAll(['hidesmall' => true]) !!}
+                    @include('frontend.cart.widget', ['elementId' => 'cart-widget-nav'])
                     <div>
                         <a href="#my-id" data-uk-offcanvas><i class="uk-icon-bars uk-margin-right"></i>Sjá meira</a>
                     </div>

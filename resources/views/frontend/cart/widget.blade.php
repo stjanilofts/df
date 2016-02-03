@@ -1,13 +1,13 @@
-<div v-cloak id="cart-widget" class="uk-text-center">
-	<a :title="count > 0 ? count + ' hlut' + ((count > 1) ? 'i' : 'u') + 'r í körfunni' : 'Karfan þín'" href="/karfa/" class="cart-widget__link">
-		<i class="uk-icon-large uk-icon-shopping-cart"></i>
-		<span v-if="count > 0" class="cart-widget__info">@{{ count }}</span>
+<div v-cloak id="{{ $elementId }}" class="{{ \Request::is('karfa*') ? 'active being_viewed' : '' }}">
+	<a :title="count > 0 ? count + ' hlut' + ((count > 1) ? 'i' : 'u') + 'r í körfunni' : 'Karfan þín'" href="/karfa/" class="{{ $elementId }}__link">
+		<i class="uk-icon-shopping-cart uk-icon-small"></i>
+		<span v-if="count > 0" class="uk-margin-left">@{{ count + (count > 1 ? ' vörur' : ' vara') }}</span>
+		<span v-if="count < 1" class="uk-margin-left">Karfa</span>
 	</a>
-	<!-- @{{ items | json 4 }} -->
 </div>
 <script>
 var cart_widget = new Vue({
-	el: '#cart-widget',
+	el: '#{{ $elementId }}',
 
 	data: {
 		base: 0,

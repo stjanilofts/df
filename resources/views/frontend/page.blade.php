@@ -4,10 +4,16 @@
 
 @section('content')
 
+	<?php
+
+	$showmenu = ($page->hasSubs() || $page->hasParent()) ? true : false;
+
+	?>
+
 	<div class="page">
 
-		@if($page->hasSubs() || $page->hasParent())
-			<div class="uk-grid" data-uk-grid-margin>
+		@if($showmenu)
+			<div class="uk-grid uk-grid-small" data-uk-grid-margin>
 				<div class="uk-width-medium-1-4">
 					<nav class="submenu">
 						{!! kalMenuFrom(\Request::segment(1)) !!}
@@ -15,11 +21,15 @@
 				</div>
 
 				<div class="uk-width-medium-3-4">
-					{!! cmsContent($page) !!}
+					<div class="page-content">
+						{!! cmsContent($page) !!}
+					</div>
 				</div>
 			</div>
 		@else
-			{!! cmsContent($page) !!}
+			<div class="page-content">
+				{!! cmsContent($page) !!}
+			</div>
 		@endif
 
 
