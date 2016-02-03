@@ -106,7 +106,7 @@ class DatabaseSeeder extends Seeder
 <p>Við höfum 50 ára reynslu í faginu</p>'
         ]);
 
-$um_okkur = makePage(['title' => 'Fyrirtækið', 'slug' => 'um-okkur',
+$um_okkur = makePage(['title' => 'Fyrirtækið', 'slug' => 'fyrirtaekid',
             'content' => '<p>Dún og fiður er leiðandi fyrirtæki í framleiðslu, endurnýjun og hreinsun á sængum, koddum, púðum, pullum og skyldum vörum úr náttúrlegum dún og fiðri.</p>
 <p>Dún og fiður byggir á um 50 ára gömlum merg, í eigu sömu fjölskyldu allan tímann. Á þessum tíma hefur safnast saman mjög mikilvæg þekking og reynsla á öllu sem lýtur að dún og fiðri, efnum því tengdu og meðhöndlun sængurfatnaðar.</p>
 <p>Dún og fiður var stofnað 1. febrúar 1959 og var fyrst til húsa að Kirkjuteig 29 í Reykjavík, en 3. ágúst 1963 flutti fyrirtækið í eigið húsnæði að Vatnsstíg 3, Reykjavík. Dún og fiður er nú til húsa á Laugavegi 86.</p>
@@ -128,12 +128,14 @@ $um_okkur = makePage(['title' => 'Fyrirtækið', 'slug' => 'um-okkur',
             makePage(['title' => $v, 'parent_id' => $forsidumyndir->id, 'images' => [['name'=>$v]]]);
         }
 
-        $flokkur1 = makeCategory(['title' => 'Flokkur 1', 'images' => getImages(3)]);
-        $flokkur2 = makeCategory(['title' => 'Flokkur 2', 'images' => getImages(3)]);
+        /*$flokkur1 = makeCategory(['title' => 'Flokkur 1', 'images' => getImages(3)]);
+        $flokkur2 = makeCategory(['title' => 'Flokkur 2', 'images' => getImages(3)]);*/
 
-        /*foreach($vorur as $vara) {
-            makeProduct($vara);
-        }*/
+        for($i = 0; $i <= 10; $i++) {
+            makeProduct([
+                'title' => $faker->name
+            ]);
+        }
 
         Model::reguard();
     }

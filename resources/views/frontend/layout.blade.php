@@ -93,8 +93,8 @@
                             </div>
 
                             <div class="uk-width-medium-2-5 uk-width-large-1-4 uk-flex">
-                                <div class="fullbar uk-flex uk-flex-middle uk-flex-center uk-flex-wrap">
-                                    <h4 data-uk-scrollspy="{cls:'uk-animation-slide-bottom uk-animation-3'}">Dún og fiður ehf framleiðir sjálf allar söluvörur sínar s.s. sængur, kodda, púða og pullur að undanskildum utanyfirverum og lökum.</h4>
+                                <div class="fullbar uk-flex uk-flex-middle uk-flex-center uk-flex-wrap uk-overflow-hidden">
+                                    <h4 data-uk-scrollspy="{cls:'uk-animation-slide-bottom uk-animation-1', delay: 600}">Dún og fiður ehf framleiðir sjálf allar söluvörur sínar s.s. sængur, kodda, púða og pullur að undanskildum utanyfirverum og lökum.</h4>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
 
             @if(frontpage())
                 <div class="fullbar yellow uk-flex uk-flex-middle uk-flex-center uk-flex-wrap" style="background-image: url('/img/fjodur2.png'); background-position: 65% center; background-repeat: no-repeat; background-size: contain;">
-                    <h2 data-uk-scrollspy="{cls:'uk-animation-slide-left uk-animation-3', delay: 600}">Síðan 1959</h2>
+                    <h2 data-uk-scrollspy="{cls:'uk-animation-slide-left uk-animation-1', delay: 600}">Starfrækt síðan 1959</h2>
                 </div>
             @endif
 
@@ -115,7 +115,7 @@
                     <div class="boxes uk-grid uk-grid-collapse">
                         <div class="uk-width-medium-1-3">
                             <div class="box uk-flex" style="background: url('/imagecache/boximg/myndBjarni05.jpg') center center no-repeat; background-size: cover;">
-                                <a class="box__centertext box--hover uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
+                                <a href="/fyrirtaekid/" class="box__centertext box--hover uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
                                     <h4>FYRIRTÆKIÐ</h4>
                                 </a>
                             </div>
@@ -123,7 +123,7 @@
 
                         <div class="uk-width-medium-1-3">
                             <div class="box uk-flex" style="background: url('/imagecache/boximg/12.jpg') center center no-repeat; background-size: cover;">
-                                <a class="box__centertext box--hover uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
+                                <a href="/vorur/" class="box__centertext box--hover uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
                                     <h4>VÖRUR</h4>
                                 </a>
                             </div>
@@ -131,7 +131,7 @@
 
                         <div class="uk-width-medium-1-3">
                             <div class="box uk-flex" style="background: url('/imagecache/boximg/image004.jpg') center center no-repeat; background-size: cover;">
-                                <a class="box__centertext box--hover uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
+                                <a href="/hreinsun/" class="box__centertext box--hover uk-flex uk-flex-center uk-flex-middle uk-flex-wrap">
                                     <h4>HREINSUN</h4>
                                 </a>
                             </div>
@@ -193,7 +193,15 @@
             @endif
 
             <div class="footer">
-                &copy; Dún og fiður ehf | kt: 670901 2540 | Laugavegur 86 | 101 Reykjavík | Sími 511 2004 | Fax 511 2003 | <a href="mailto:dunogfidur@dunogfidur.is">dunogfidur@dunogfidur.is</a>
+                <ul class="bottom-ul">
+                    <li>&copy; Dún og fiður ehf</li>
+                    <li>Kt. 670901 2540</li>
+                    <li>Laugavegur 86, 101 Reykjavík</li>
+                    <li><i class="uk-icon-phone-square uk-margin-right"></i>511 2004</li>
+                    <li><i class="uk-icon-fax uk-margin-right"></i> 511 2003</li>
+                    <li><a href="mailto:dunogfidur@dunogfidur.is"><i class="uk-icon-envelope-o uk-margin-right"></i>dunogfidur@dunogfidur.is</a></li>
+                    <li><a href="https://www.facebook.com/dunogfidur.is" title="Dún og fiður á Facebook"><i class="uk-icon-facebook-square uk-icon-small"></i></a></li>
+                </ul>
             </div>
 
         </div>

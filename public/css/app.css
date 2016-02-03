@@ -8,6 +8,7 @@ html, body {
 html {
   background: #EEE;
   color: #a7a9ac !important;
+  font-weight: 300;
   font-size: 18px;
   line-height: 36px;
   font-family: "Cabin", sans-serif; }
@@ -16,8 +17,9 @@ html {
   html .takki,
   html a.takki,
   html button.takki {
-    font-size: 18px;
-    line-height: 36px; }
+    font-family: "Cabin", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 36px !important; }
   html h1 {
     font-size: 3rem;
     line-height: 4rem; }
@@ -39,30 +41,15 @@ html {
   @media (max-width: 1400px) {
     html {
       font-size: 17px;
-      line-height: 34px; }
-      html .takki,
-      html a.takki,
-      html button.takki {
-        font-size: 17px;
-        line-height: 34px; } }
+      line-height: 34px; } }
   @media (max-width: 1100px) {
     html {
       font-size: 16px;
-      line-height: 32px; }
-      html .takki,
-      html a.takki,
-      html button.takki {
-        font-size: 16px;
-        line-height: 32px; } }
+      line-height: 32px; } }
   @media (max-width: 800px) {
     html {
       font-size: 15px;
-      line-height: 30px; }
-      html .takki,
-      html a.takki,
-      html button.takki {
-        font-size: 15px;
-        line-height: 30px; } }
+      line-height: 30px; } }
   html h1, html h2, html h3, html h4, html h5, html h6 {
     font-family: "Cabin", sans-serif;
     font-weight: bold;
@@ -71,26 +58,24 @@ html {
     color: #a7a9ac; }
 
 /* TAKKI */
-.takkar .takki {
-  margin-bottom: 0.5em;
-  margin-right: 0.5em; }
-
 .takki,
 a.takki,
 button.takki {
-  background: #d7bc02;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0.5em !important;
+  margin-right: 0.5em !important;
   color: #2e2d2b;
+  border: 1px solid #d7bc02 !important;
   display: inline-block !important;
   box-sizing: border-box !important;
   text-align: center;
-  font-weight: bold !important;
   text-decoration: none !important;
-  padding: 1em !important;
-  border: none !important;
+  padding: 0.5em 1em !important;
   cursor: pointer !important;
-  box-shadow: 2px 2px 0px #a7a9ac;
+  background: none !important;
   text-transform: uppercase;
-  transition: box-shadow 0.2s, background 0.2s; }
+  transition: background 0.2s, color 0.2s, border 0.2s; }
   @media (max-width: 480px) {
     .takki,
     a.takki,
@@ -104,9 +89,9 @@ button.takki {
   button.takki.focus,
   button.takki.active,
   button.takki:hover {
-    background: #a49002;
-    color: #2e2d2b;
-    box-shadow: 2px 2px 0px #808387; }
+    background: #2e2d2b !important;
+    color: #d7bc02;
+    border: 1px solid #2e2d2b !important; }
 
 body a {
   color: #d7bc02;
@@ -116,9 +101,11 @@ body a {
 
 /* FORM */
 input, textarea, select {
-  border: 1px solid #d7bc02 !important;
+  border: 0px solid #d7bc02 !important;
+  background: #EEE !important;
+  color: #a7a9ac !important;
   padding: 0.5em;
-  font-size: 1em; }
+  font-size: 1rem !important; }
 
 form.basic h3 {
   padding-bottom: 1em; }
@@ -156,7 +143,7 @@ form.basic label {
 
 /* NAV */
 .uk-offcanvas-bar {
-  background: #d7bc02; }
+  background: #2e2d2b; }
 
 nav ul {
   list-style: none;
@@ -184,6 +171,7 @@ nav.offcanvas div {
   padding: 0;
   margin: 0; }
   nav.offcanvas div.being_viewed > a {
+    text-decoration: none;
     background: #a49002; }
   nav.offcanvas div a {
     font-weight: 600;
@@ -421,6 +409,8 @@ header {
   box-sizing: border-box;
   padding: 25px;
   min-height: 600px; }
+  .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    color: #d7bc02; }
 
 .haus {
   background: #FFF;
@@ -436,6 +426,26 @@ header {
   font-weight: bold;
   padding: 2em;
   width: 100%; }
+  .footer ul.bottom-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block; }
+    .footer ul.bottom-ul li {
+      display: inline;
+      text-align: center; }
+      .footer ul.bottom-ul li:after {
+        content: "\f111";
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #d7bc02;
+        position: relative;
+        bottom: 3px;
+        font: normal normal normal 0.5rem FontAwesome !important; }
+      .footer ul.bottom-ul li:last-child:after {
+        content: "";
+        padding: 0 !important;
+        display: none !important; }
   .footer a {
     color: #FFF !important; }
     .footer a:hover {
