@@ -49,9 +49,11 @@
                         &nbsp;
                     </div>
                     <div class="uk-width-medium-1-3 uk-text-center">
-                        <a href="/"><img src="/img/logo.png" /></a>
+                        <a href="/" id="logo"><img src="/img/logo.png" /></a>
                     </div>
-
+                    <div class="uk-width-medium-1-3 cart-widget-container uk-flex uk-flex-top uk-flex-right">
+                        <h3><i class="uk-icon-phone-square uk-margin-right"></i>511 2004</h3>
+                    </div>
                     {{-- <div class="uk-width-medium-1-3 cart-widget-container uk-flex uk-flex-center uk-text-center uk-flex-middle">
                         @include('frontend.cart.widget', ['elementId' => 'cart-widget'])
                     </div> --}}
@@ -77,7 +79,7 @@
                         <div class="uk-grid uk-grid-collapse">
                             <div class="uk-width-medium-3-5 uk-width-large-3-4">
                                 <div class="forsidumyndir">
-                                    <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true, autoplayInterval: 3000}">
+                                    <div class="uk-slidenav-position" data-uk-slideshow="{autoplay: true, autoplayInterval: 3000, animation: 'swipe'}">
                                         <ul class="uk-slideshow">
                                             @foreach($forsidumyndir as $key => $mynd)
                                                 <li>
