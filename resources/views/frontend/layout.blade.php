@@ -170,7 +170,7 @@
 
                         <div class="uk-width-medium-3-5">
                             <div class="box uk-flex" style="background-image: url('/imagecache/original/bg-kort.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
-                                <a href="/stadsetning/"
+                                <a href="/fyrirtaekid/stadsetning/"
                                    class="box__centertext box--hover uk-flex uk-flex-center uk-flex-middle uk-flex-wrap uk-flex-column">
                                     <h3><i class="uk-icon-map-marker uk-margin-right"></i>Staðsetning okkar</h3>
                                     <div>
@@ -186,7 +186,7 @@
 
             @if(!frontpage())
                 <div class="content-container" style="padding-bottom: 80px !important;">
-                    <header style="background: url('/imagecache/header/2.jpg') center center no-repeat; background-size: cover;">
+                    <header style="background: url('/imagecache/header/{{ (isset($banner) ? $banner : '2.jpg') }}') center center no-repeat; background-size: cover;">
                         <h1>@yield('title')</h1>
                     </header>
 

@@ -20,11 +20,11 @@ foreach(config('formable.hlutir') as $hlutur) {
 	</div>
 </div>
 
-{{-- @if(!empty($images))
+@if(!empty($images))
 	<div class="uk-form-row">
 		<label class="uk-form-label" for="banner">Banner mynd</label>
 		<div class="uk-form-controls">
 			{!! Form::select('banner', $images, (isset($item->banner) ? $item->banner : ''), ['class'=>'uk-width-1-1']) !!}
 		</div>
 	</div>
-@endif --}}
+@endif

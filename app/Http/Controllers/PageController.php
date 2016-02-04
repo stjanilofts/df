@@ -55,6 +55,9 @@ class PageController extends ItemableController
                     $data['subs'] = $page->getSubs();
                 }
                 
+
+                $data['banner'] = $page['banner'] ?: false;
+                
                 //$data['crumbs'] = $crumbs;
 
                 if($page->blade_view) {
