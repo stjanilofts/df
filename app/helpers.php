@@ -233,6 +233,7 @@ function kalMenuFrom($slug) {
 }
 
 
+
 function kalMenu($args = array(), $pages = false, $lvl = 1, &$menu = "", &$paths = array())
 {
     if(isset($args['hidden']) && $args['hidden']) {

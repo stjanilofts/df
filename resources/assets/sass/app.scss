@@ -19,6 +19,10 @@ $font1: 'Cabin', sans-serif;
 html, body { height: 100%; }
 
 html {
+	hr {
+		border-top: 1px solid $yellow;
+	}
+
 	background: #EEE;
 
 	color: $grey !important;
@@ -196,10 +200,10 @@ form {
 			color: inherit;
 			transition: color 0.2s, background 0.2s;
 			&.errors {
-				color: #ff0033 !important;
+				color: #d47464 !important;
 				input, select, textarea {
 					color: #FFF !important;
-					background: lighten(desaturate(#ff0033, 25%), 25%) !important;
+					background: lighten(desaturate(#d47464, 25%), 25%) !important;
 				}
 			}
 		}
@@ -430,7 +434,7 @@ nav {
 		margin-bottom: 1em;
 
 		.updating-cart {
-			background: rgba($yellow, 0);
+			background: rgba(#FFF, 0);
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -443,7 +447,7 @@ nav {
 			&.active {
 				opacity: 1;
 				pointer-events:	auto;
-				background: rgba($yellow, 0.2);
+				background: rgba(#FFF, 0.5);
 			}
 		}
 	}
@@ -527,8 +531,8 @@ nav {
 		}
 	}
 	&__mynd {
-		/*border: 1px solid $yellow-lite;*/
 		clear: both;
+		border: 1px solid $yellow;
 		a {
 			display: block;
 			text-align: center;
@@ -556,7 +560,8 @@ nav {
 		img {
 			margin: 0 auto;
 			display: inline-block;
-			/*border: 1px solid $yellow-lite;*/
+			background: $grey;
+			border: 1px solid $yellow;
 		}
 	}
 }
@@ -701,6 +706,11 @@ header {
 	}
 }
 
+a.nohover {
+	&:hover {
+		text-decoration: none !important;
+	}
+}
 
 .page {
 	margin: 0 auto;
@@ -890,10 +900,10 @@ figure {
 	position: relative;
 	display: block;
 	transition: background 0.2s;
-	background: $yellow-lite;
+	background: $grey2;
 
 	&:hover {
-		background: lighten($yellow-lite, 2%);
+		background: lighten($grey2, 2%);
 		.card__image {
 			opacity: 0.8;
 		}
@@ -904,7 +914,6 @@ figure {
 		position: relative;
 		display: block;
 		background-color: #FFF;
-		/*border: 1px solid $yellow-lite;*/
 		min-height: 240px;
 	}
 
@@ -1045,12 +1054,12 @@ figure {
 
 
 
-/*.uk-slidenav-position .uk-slidenav-previous {
-	left: -30px !important;
+.uk-slidenav-position .uk-slidenav-previous {
+	left: -15px !important;
 }
 .uk-slidenav-position .uk-slidenav-next {
-	right: 30px !important;
-}*/
+	right: -15px !important;
+}
 
 .uk-animation-5 {
     -webkit-animation-duration: 5s !important;

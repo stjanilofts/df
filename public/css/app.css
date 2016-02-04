@@ -12,6 +12,8 @@ html {
   font-size: 18px;
   line-height: 36px;
   font-family: "Cabin", sans-serif; }
+  html hr {
+    border-top: 1px solid #d7bc02; }
   html em {
     color: #a7a9ac !important; }
   html .takki, html nav.submenu div a, nav.submenu div html a,
@@ -137,10 +139,10 @@ form.basic label {
   color: inherit;
   transition: color 0.2s, background 0.2s; }
   form.basic label.errors {
-    color: #ff0033 !important; }
+    color: #d47464 !important; }
     form.basic label.errors input, form.basic label.errors select, form.basic label.errors textarea {
       color: #FFF !important;
-      background: #ef8fa3 !important; }
+      background: #e7d4d1 !important; }
 
 /* FORSÍÐUMYNDIR */
 .front {
@@ -300,7 +302,7 @@ nav.top {
   display: block;
   margin-bottom: 1em; }
   #cart .cart-table-container .updating-cart {
-    background: rgba(215, 188, 2, 0);
+    background: rgba(255, 255, 255, 0);
     position: absolute;
     top: 0;
     left: 0;
@@ -312,7 +314,7 @@ nav.top {
     #cart .cart-table-container .updating-cart.active {
       opacity: 1;
       pointer-events: auto;
-      background: rgba(215, 188, 2, 0.2); }
+      background: rgba(255, 255, 255, 0.5); }
 
 #cart table.cart-table {
   background: #FFF;
@@ -362,8 +364,8 @@ nav.top {
   clear: both; }
 
 .product__mynd {
-  /*border: 1px solid $yellow-lite;*/
-  clear: both; }
+  clear: both;
+  border: 1px solid #d7bc02; }
   .product__mynd a {
     display: block;
     text-align: center;
@@ -388,7 +390,8 @@ nav.top {
   .product__aukamynd img {
     margin: 0 auto;
     display: inline-block;
-    /*border: 1px solid $yellow-lite;*/ }
+    background: #a7a9ac;
+    border: 1px solid #d7bc02; }
 
 /* CONTAINERS */
 .cart-widget-container {
@@ -500,6 +503,9 @@ header {
     color: #FFF; }
     .footer a:hover {
       color: #FFF; }
+
+a.nohover:hover {
+  text-decoration: none !important; }
 
 .page {
   margin: 0 auto;
@@ -625,9 +631,9 @@ figure {
   position: relative;
   display: block;
   transition: background 0.2s;
-  background: #f5f3e3; }
+  background: #d1d2d4; }
   .card:hover {
-    background: #f8f6ea; }
+    background: #d6d7d9; }
     .card:hover .card__image {
       opacity: 0.8; }
   .card__image {
@@ -635,7 +641,6 @@ figure {
     position: relative;
     display: block;
     background-color: #FFF;
-    /*border: 1px solid $yellow-lite;*/
     min-height: 240px; }
   .card__text {
     font-weight: 600;
@@ -713,12 +718,12 @@ figure {
     text-align: center;
     color: #FFF; }
 
-/*.uk-slidenav-position .uk-slidenav-previous {
-	left: -30px !important;
-}
+.uk-slidenav-position .uk-slidenav-previous {
+  left: -15px !important; }
+
 .uk-slidenav-position .uk-slidenav-next {
-	right: 30px !important;
-}*/
+  right: -15px !important; }
+
 .uk-animation-5 {
   -webkit-animation-duration: 5s !important;
   animation-duration: 5s !important; }

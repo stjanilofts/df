@@ -107,11 +107,11 @@ class Page extends Formable
             'type' => 'text',
             'name' => 'blade_view'
         ],
-        /*[
+        [
             'title' => 'Sýna í topp menu (ef þetta er í rótinni)',
             'type' => 'checkbox',
             'name' => 'topmenu'
-        ],*/
+        ],
         [
             'title' => 'Slug',
             'type' => 'text',

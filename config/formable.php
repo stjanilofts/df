@@ -7,9 +7,9 @@ return [
     'site_description' => 'Dún & fiður',
 
     'company_name' => 'Dún & fiður',
-    'company_email' => 'test@test.is',
+    'company_email' => 'test@netvistun.is',
 
-    'email' => 'test@test.is',
+    'email' => 'test@netvistun.is',
     
     /*
     |--------------------------------------------------------------------------

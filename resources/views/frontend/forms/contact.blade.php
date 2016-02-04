@@ -2,63 +2,68 @@
 	<form class="basic" v-on:submit.prevent="onSubmit" v-if="!isSubmitted">
 		<div class="uk-grid" data-uk-grid-margin>
 			<div class="uk-width-medium-1-2">
-				<input id="fyrirspurn_nafn"
-					   @focus="clearError"
-					   :class="{'form-danger': errors.nafn.length}"
-					   type="text"
-					   class="uk-width-1-1"
-					   :disabled="isSubmitting"
-					   name="nafn"
-					   v-model="fyrirspurn.nafn"
-				   	   placeholder="Nafn" />
+				<label :class="{ 'errors': errors.nafn }">Nafn<br>
+					<input id="fyrirspurn_nafn"
+						   @focus="clearError"
+						   type="text"
+						   class="uk-width-1-1"
+						   :disabled="isSubmitting"
+						   name="nafn"
+						   v-model="fyrirspurn.nafn" />
+					<small class="uk-display-inline-block uk-margin-small-top" v-if="errors.nafn"><i class="uk-icon-exclamation-triangle uk-margin-right"></i>@{{ errors.nafn }}</small>
+				</label>
 			</div>
 			
 			<div class="uk-width-medium-1-2">
-				<input id="fyrirspurn_netfang"
-					   @focus="clearError"
-					   :class="{'form-danger': errors.netfang.length}"
-					   type="text"
-					   class="uk-width-1-1"
-					   :disabled="isSubmitting"
-					   name="netfang"
-					   v-model="fyrirspurn.netfang"
-				   	   placeholder="Netfang" />
+				<label :class="{ 'errors': errors.netfang }">Netfang<br>
+					<input id="fyrirspurn_netfang"
+						   @focus="clearError"
+						   type="text"
+						   class="uk-width-1-1"
+						   :disabled="isSubmitting"
+						   name="netfang"
+						   v-model="fyrirspurn.netfang" />
+					<small class="uk-display-inline-block uk-margin-small-top" v-if="errors.netfang"><i class="uk-icon-exclamation-triangle uk-margin-right"></i>@{{ errors.netfang }}</small>
+				</label>
 			</div>
 
 			<div class="uk-width-medium-1-2">
-				<input id="fyrirspurn_simi"
-					   @focus="clearError"
-					   :class="{'form-danger': errors.simi.length}"
-					   type="text"
-					   class="uk-width-1-1"
-					   :disabled="isSubmitting"
-					   name="simi"
-					   v-model="fyrirspurn.simi"
-				   	   placeholder="Sími" />
+				<label :class="{ 'errors': errors.simi }">Símanúmer<br>
+					<input id="fyrirspurn_simi"
+						   @focus="clearError"
+						   type="text"
+						   class="uk-width-1-1"
+						   :disabled="isSubmitting"
+						   name="simi"
+						   v-model="fyrirspurn.simi" />
+					<small class="uk-display-inline-block uk-margin-small-top" v-if="errors.simi"><i class="uk-icon-exclamation-triangle uk-margin-right"></i>@{{ errors.simi }}</small>
+				</label>
 			</div>
 
 			<div class="uk-width-medium-1-2">
-				<input id="fyrirspurn_titill"
-					   @focus="clearError"
-					   :class="{'form-danger': errors.titill.length}"
-					   type="text"
-					   class="uk-width-1-1"
-					   :disabled="isSubmitting"
-					   name="titill"
-					   v-model="fyrirspurn.titill"
-				   	   placeholder="Titill" />
+				<label :class="{ 'errors': errors.titill }">Titill á skilaboðum<br>
+					<input id="fyrirspurn_titill"
+						   @focus="clearError"
+						   type="text"
+						   class="uk-width-1-1"
+						   :disabled="isSubmitting"
+						   name="titill"
+						   v-model="fyrirspurn.titill" />
+					<small class="uk-display-inline-block uk-margin-small-top" v-if="errors.titill"><i class="uk-icon-exclamation-triangle uk-margin-right"></i>@{{ errors.titill }}</small>
+				</label>
 			</div>
 
 			<div class="uk-width-medium-1-1">
-				<textarea id="fyrirspurn_skilabod"
-						  @focus="clearError"
-						  :class="{'form-danger': errors.skilabod.length}"
-						  rows="6"
-						  class="uk-width-1-1"
-						  :disabled="isSubmitting"
-						  name="skilabod"
-					   	  v-model="fyrirspurn.skilabod"
-				   	   	  placeholder="Skilaboðin hér..."></textarea>
+				<label :class="{ 'errors': errors.skilabod }">Skilaboðin þín<br>
+					<textarea id="fyrirspurn_skilabod"
+							  @focus="clearError"
+							  rows="6"
+							  class="uk-width-1-1"
+							  :disabled="isSubmitting"
+							  name="skilabod"
+						   	  v-model="fyrirspurn.skilabod"></textarea>
+					<small class="uk-display-inline-block uk-margin-small-top" v-if="errors.skilabod"><i class="uk-icon-exclamation-triangle uk-margin-right"></i>@{{ errors.skilabod }}</small>
+				</label>
 			</div>
 
 			<div class="uk-width-medium-1-1">
@@ -148,13 +153,12 @@ var contact_form = new Vue({
     		}, 250);
 
     		self.timer = setTimeout(function() {
-    			self.$http.post('/hafa-samband', self.fyrirspurn, function(data, status, request) {
+    			self.$http.post('/hafa-samband', self.fyrirspurn).then(function(response) {
     				//console.log('done', data, status, request);
 	    			self.isSubmitted = true;
 	    			self.isSubmitting = false;
-	    		}).error(function(data, status, request) {
-	    			//console.log('not done', data, status, request);
-	    			self.$set('errors', data);
+	    		}, function(response) {
+	    			self.$set('errors', response.data);
 	    			self.isSubmitting = false;
 	    		});
 	    	}, 1000);

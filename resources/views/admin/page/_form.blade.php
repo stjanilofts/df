@@ -26,5 +26,19 @@ foreach(config('formable.hlutir') as $hlutur) {
 		<div class="uk-form-controls">
 			{!! Form::select('banner', $images, (isset($item->banner) ? $item->banner : ''), ['class'=>'uk-width-1-1']) !!}
 		</div>
+		@if(isset($item->banner))
+			<div>
+				<p><img class="banner-image" src="/imagecache/small/{{ $item->banner }}" /></p>
+			</div>
+		@endif
 	</div>
+	<script>
+	$(document).ready(function() {
+		$(function() {
+			$('select[name=banner]').change(function() {
+				$('img.banner-image').attr('src', '/imagecache/small/' + $(this).val())
+			})
+		})
+	})
+	</script>
 @endif
